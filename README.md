@@ -186,6 +186,6 @@ Feel free to explore the website and don't hesitate to reach out for collaborati
 
 ---
 
-*"Let's build something amazing together!"* 🚀
+> ***Let's build something amazing together!*** 🚀
 
 **© 2024 Teguh Anggar. All rights reserved.**
