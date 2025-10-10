@@ -3,9 +3,9 @@
 
 ---
 
-## 📔 List of Content
+## 📔 Table of Contents
 - [👤 This is a Personal Website of Teguh Anggar](#-this-is-a-personal-website-of-teguh-anggar)
-  - [📔 List of Content](#-list-of-content)
+  - [📔 Table of Contents](#-table-of-contents)
   - [💡 About This Project](#-about-this-project)
   - [💻 Tech Stack](#-tech-stack)
     - [🎨 Front End 🎨](#-front-end-)
