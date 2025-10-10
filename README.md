@@ -1,6 +1,6 @@
 # 👤 Personal Website of Teguh Anggar
 
-![Home](src/assets/images/home-page.png)
+![Home](images/home-page.png)
 
 ## 📔 Table of Contents
 
