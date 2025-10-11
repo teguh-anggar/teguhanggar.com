@@ -1,8 +1,0 @@
-welcome
-this
-is
-just
-a
-good
-example
-!
