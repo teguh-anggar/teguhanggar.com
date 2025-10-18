@@ -3,9 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact - Teguh Anggar</title>
   </head>
   <body>
-    <h1>Contact</h1>
+    <header class="site-header">
+      <div class="logo-container">
+        <img class="logo" src="/images/logo-circle-white.svg" alt="Logo" />
+        <h1 class="site-title">TEGUH ANGGAR</h1>
+        <button class="theme-toggle">
+          <img src="/images/sunny-sharp.svg" alt="Toggle Theme" />
+        </button>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-header">
+        <h1>Stay Connected with <span class="highlight">Teguh</span></h1>
+        <p>
+          Feel free to fill the contact form, so we can keep the good
+          interaction
+        </p>
+      </section>
+
+      <section class="contact-form">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="John"
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <div class="phone-input">
+              <input type="text" class="country-code" value="+62" readonly />
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="812345678"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/images/logo-circle-white.svg" alt="Logo" />
+          <p>TEGUH ANGGAR</p>
+          <p>
+            <a href="/terms">Terms</a> . <a href="/privacy">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Product</h3>
+          </div>
+          <div class="footer-column">
+            <h3>Platform</h3>
+          </div>
+          <div class="footer-column">
+            <h3>Support</h3>
+          </div>
+          <div class="footer-column">
+            <h3>Company</h3>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2025 TEGUH ANGGAR All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
