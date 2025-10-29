@@ -58,7 +58,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: #cacaca;
     padding-top: 60px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(images/home-hero-background.jpg);
     background-size: cover;
     background-position: center;
@@ -176,6 +176,5 @@ footer {
 }
 
 .logo-footer {
-    margin-left: 1rem;
     width: 20px;
 }
