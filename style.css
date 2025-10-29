@@ -17,7 +17,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;    
+    gap: 1rem;
 }
 
 .logo {
@@ -34,7 +34,7 @@ html {
     display: flex;
     list-style: none;
     gap: 20px;
-}       
+}
 
 .main-nav ul li a {
     text-decoration: none;
@@ -54,12 +54,12 @@ html {
 }
 
 body {
-    margin : 0;
+    margin: 0;
     font-family: 'Inter', sans-serif;
     color: #cacaca;
     padding-top: 60px;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url(images/home-hero-background.jpg);
+        url(images/home-hero-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,6 +68,7 @@ body {
 .highlighted-text {
     color: #00BBC9;
 }
+
 .hero-section {
     display: flex;
     flex-flow: column wrap;
@@ -103,20 +104,78 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    padding: 0;
+    margin: 2rem 0;
 }
 
+.social-media li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+/* X (Twitter) - Black */
 .social-media li a[href*="x.com"] {
-    background-color: #000;
+    background-color: #000000;
+}
+
+.social-media li a[href*="x.com"]:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* LinkedIn - Official Blue */
+.social-media li a[href*="linkedin.com"],
+.social-media li a[href*="LinkedIn.com"] {
+    background-color: #0A66C2;
+}
+
+.social-media li a[href*="linkedin.com"]:hover,
+.social-media li a[href*="LinkedIn.com"]:hover {
+    background-color: #004182;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(10, 102, 194, 0.4);
+}
+
+/* Telegram - Official Blue */
+.social-media li a[href*="t.me"] {
+    background-color: #0088cc;
+}
+
+.social-media li a[href*="t.me"]:hover {
+    background-color: #006ba1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4);
+}
+
+/* GitHub - Dark Gray */
+.social-media li a[href*="github.com"] {
+    background-color: #333333;
+}
+
+.social-media li a[href*="github.com"]:hover {
+    background-color: #24292e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(51, 51, 51, 0.4);
 }
 
 footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     background-color: #202022;
 }
 
 .logo-footer {
+    margin-left: 1rem;
     width: 20px;
 }
