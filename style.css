@@ -2,14 +2,19 @@ html {
     margin: 0;
 }
 
-.header-container, .logo-container {
+.header-container {
     background-color: #202022;
     display: flex;
     justify-content: space-around;
-
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo-container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;    
@@ -52,7 +57,8 @@ body {
     margin : 0;
     font-family: 'Inter', sans-serif;
     color: #cacaca;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    padding-top: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
                 url(images/home-hero-background.jpg);
     background-size: cover;
     background-position: center;
@@ -60,10 +66,6 @@ body {
 }
 
 .highlighted-text {
-    background: linear-gradient(45deg, #00BBC9, #0F546F);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: #00BBC9;
 }
 .hero-section {
@@ -103,10 +105,18 @@ body {
     gap: 1rem;
 }
 
+.social-media li a[href*="x.com"] {
+    background-color: #000;
+}
+
 footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
     background-color: #202022;
+}
+
+.logo-footer {
+    width: 20px;
 }
