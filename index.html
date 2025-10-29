@@ -3,47 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Teguh Anggar</title>
   </head>
   <body>
-    <header class="site-header">
-      <div class="logo-container">
-        <img class="logo" src="/images/logo-circle-white.svg" alt="Logo" />
+    <header class="header-container">
+      <div class="logo-container ">
+        <img class="logo" src="/images/logo-circle-white.png" alt="Logo" width="50"/>
         <h1 class="site-title">TEGUH ANGGAR</h1>
         <button class="theme-toggle">
-          <img src="/images/sunny-sharp.svg" alt="Toggle Theme" />
+          <img src="/images/sunny-sharp.svg" alt="Toggle Theme" width="20" />
         </button>
       </div>
 
       <nav class="main-nav">
-        <a href="/">Home</a>
-        <a href="/contact">Contact</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
-        <a href="/projects">Projects</a>
+        <ul>
+          <li><a href="/">Home</a></li></li> 
+          <li><a href="/contact">Contact</a></li> 
+          <li><a href="/about">About</a></li> 
+          <li><a href="/blog">Blog</a></li> 
+          <li><a href="/projects">Projects</a></li> 
+        </ul>
       </nav>
     </header>
 
     <main>
-      <div class="hero-section">
+      <section class="hero-section">
         <div class="hero-photo">
           <img src="/images/hero-photo.png" alt="Hero Photo" />
         </div>
-        <h1>Hi, I'm Teguh</h1>
+        <h1>Hi, I'm <span class="highlighted-text">Teguh</span></h1>
         <p>
-          🌐 I am a full-stack web developer based in Indonesia 🇮🇩 🚀 My mission
+          🌐 I am a full-stack web developer based in Indonesia 🇮🇩 <br> 🚀 My mission
           is to help people builld a meaningful digital solution for their
           businesses, professional, education, or personal goals — with clarity,
           creativity, and care.
         </p>
-        <button>X</button>
-        <button>LinkedIn</button>
-        <button>Telegram</button>
-        <button>Github</button>
-      </div>
+        <ul class="social-media">
+          <li>
+            <a target="_blank" href="https://x.com/teguh_anggar"><i class="fa-brands fa-x-twitter"></i>
+              <span>Follow</span></a>
+           </li> 
+          <li>
+            <a href="https://LinkedIn.com/in/teguh-anggar"><i class="fa-brands fa-linkedin"></i>
+              <span>Connect</span></a>
+           </li> 
+           <li>
+             <a href="https://t.me/+6281529282474"><i class="fa-brands fa-telegram"></i>
+            <span>Chat</span></a>
+            </li> 
+           <li>
+              <a href="https://github.com/teguh-anggar"><i class="fa-brands fa-github"></i>
+              <span>Follow</span></a>
+           </li> 
+      </ul>
+      </sectionv>
     </main>
     <footer>
-      <img class="logo-footer" src="/images/logo-circle-white.svg" alt="Logo" />
+      <img class="logo-footer" src="/images/logo-circle-white.png" alt="Logo" width="30" />
       <p>&copy; 2025 Teguh Anggar</p>
     </footer>
   </body>
