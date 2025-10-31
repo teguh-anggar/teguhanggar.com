@@ -12,10 +12,9 @@ html {
 
 body {
   margin: 0;
-  padding-top: 50px;
+  padding: 0;
   font-family: "Inter", sans-serif;
   color: #cacaca;
-  padding-top: 70px;
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -88,7 +87,7 @@ body {
   flex-flow: column wrap;
   align-items: center;
   position: relative;
-  padding: 4rem 1rem;
+  padding: 10rem 1rem;
   background: linear-gradient(rgba(3, 10, 20, 0.9), rgba(3, 10, 20, 0.9)),
     url("/images/home-hero-background.jpg");
   background-size: cover;
@@ -141,6 +140,12 @@ body {
 .hero-section ul li a {
   color: #cacaca;
   text-decoration: none;
+}
+
+.hero-photo {
+  margin: 20px;
+  width: 100%;
+  height: auto;
 }
 
 .social-media {
@@ -414,12 +419,8 @@ body {
   width: 20px;
 }
 
-/* Mobile Small */
-@media (max-width: 768px) {
-  body {
-    padding-top: 60px;
-  }
-
+/* Tablet / Laptop Small */
+@media (min-width: 768px) {
   /* Header adjustments */
   .header-container {
     justify-content: space-between;
@@ -474,11 +475,6 @@ body {
     padding: 0 0.5rem;
     margin: 1rem 0;
     line-height: 1.6;
-  }
-
-  .hero-photo img {
-    max-width: 100%;
-    height: auto;
   }
 
   /* Social media buttons mobile */
@@ -557,38 +553,8 @@ body {
   }
 }
 
-/* Laptop Small */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header-container {
-    padding: 0.5rem 2rem;
-  }
-
-  .hero-section h1 {
-    font-size: 72px;
-  }
-
-  .hero-section p {
-    font-size: 1.2rem;
-    padding: 0 2rem;
-  }
-
-  .section-title h1 {
-    font-size: 3rem;
-  }
-
-  .work-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding: 2.5rem 2rem;
-  }
-}
-
 /* Desktop */
 @media (min-width: 1024px) {
-  body {
-    padding: 0;
-  }
-
   .hero-section {
     padding-top: 8rem;
   }
