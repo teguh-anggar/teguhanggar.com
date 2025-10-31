@@ -58,11 +58,6 @@ body {
     font-family: 'Inter', sans-serif;
     color: #cacaca;
     padding-top: 60px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(images/home-hero-background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .highlighted-text {
@@ -73,6 +68,31 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    position: relative;
+    padding-bottom: 4rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(images/home-hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Blur gradient transition at bottom of hero */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(32, 32, 34, 0.3) 40%,
+        rgba(32, 32, 34, 0.7) 70%,
+        #0F172A 100%
+    );
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    pointer-events: none;
 }
 
 .hero-section h1 {
@@ -165,6 +185,198 @@ body {
     background-color: #24292e;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(51, 51, 51, 0.4);
+}
+
+/* Burger Menu Button */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.burger-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: #cacaca;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #202022;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li {
+    border-bottom: 1px solid #3a3a3c;
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    color: #cacaca;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #2a2a2c;
+    color: #00BBC9;
+    padding-left: 2.5rem;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive: Show burger menu on mobile */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
+
+.career-section {
+    background-color: #0F172A;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title h1 {
+    font-size: 4rem;
+    margin: 0.5 auto;
+}
+
+.section-title h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 150;
+    font-size: 1.2rem;
+    letter-spacing: 1rem;
+}
+
+.section-title h2 {
+    margin-top: 0;
+    font-weight: 100;
+}
+
+.work-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem 2rem 5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.work-card {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(71, 85, 105, 0.5);
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.work-card:hover {
+    border-color: rgba(0, 187, 201, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 187, 201, 0.15);
+    background: rgba(30, 41, 59, 0.8);
+}
+
+.work-card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.work-card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    filter: brightness(1.1);
+}
+
+.work-card h3 {
+    color: #e2e8f0;
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.work-card p {
+    color: #cacaca;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
 }
 
 footer {
