@@ -83,8 +83,8 @@ body {
   align-items: center;
   position: relative;
   padding: 2rem 1rem 4rem 1rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(images/home-hero-background.jpg);
+  background: linear-gradient(rgba(3, 10, 20, 0.9), rgba(3, 10, 20, 0.9)),
+    url("/images/home-hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,10 +135,6 @@ body {
 .hero-section ul li a {
   color: #cacaca;
   text-decoration: none;
-}
-
-.hero-section ul li a:hover {
-  color: #00bbc9;
 }
 
 .social-media {
