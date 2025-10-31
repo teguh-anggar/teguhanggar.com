@@ -1,20 +1,30 @@
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #cacaca;
+  padding-top: 70px;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
 .header-container {
-  background-color: #202022;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #202022;
   position: fixed;
   top: 0;
   left: 0;
@@ -61,16 +71,6 @@ html {
 .theme-toggle {
   margin: 1rem;
   padding: 2 auto;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
-  color: #cacaca;
-  padding-top: 70px;
-  overflow-x: hidden;
-  min-height: 100vh;
 }
 
 .highlighted-text {
