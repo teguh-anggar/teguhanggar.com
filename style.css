@@ -70,7 +70,13 @@ body {
 
 .theme-toggle {
   margin: 1rem;
-  padding: 2 auto;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .highlighted-text {
