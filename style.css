@@ -83,7 +83,7 @@ body {
   align-items: center;
   position: relative;
   padding: 2rem 1rem 4rem 1rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(images/home-hero-background.jpg);
   background-size: cover;
   background-position: center;
@@ -206,8 +206,8 @@ body {
   box-shadow: 0 4px 12px rgba(51, 51, 51, 0.4);
 }
 
-/* Burger Menu Button */
-.burger-menu {
+/* Mobile Menu Button */
+.mobile-menu {
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -221,7 +221,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.burger-menu span {
+.mobile-menu span {
   width: 100%;
   height: 3px;
   background-color: #cacaca;
@@ -229,15 +229,15 @@ body {
   transition: all 0.3s ease;
 }
 
-.burger-menu.active span:nth-child(1) {
+.mobile-menu.active span:nth-child(1) {
   transform: rotate(45deg) translate(8px, 8px);
 }
 
-.burger-menu.active span:nth-child(2) {
+.mobile-menu.active span:nth-child(2) {
   opacity: 0;
 }
 
-.burger-menu.active span:nth-child(3) {
+.mobile-menu.active span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
@@ -319,7 +319,7 @@ body {
     box-sizing: border-box;
   }
 
-  .burger-menu {
+  .mobile-menu {
     display: flex;
   }
 
@@ -342,7 +342,7 @@ body {
   }
 
   .theme-toggle {
-    margin: 0.25rem;
+    display: flex;
   }
 
   /* Hero section mobile */

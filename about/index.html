@@ -4,22 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Teguh Anggar</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <header>
-      <div class="logo-header">
-        <img src="/images/logo-circle-white.svg" alt="Logo" />
-        <h1>TEGUH ANGGAR</h1>
-        <img src="/images/sunny-sharp.svg" alt="light mode" />
-      </div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-        <a href="/blog">Blog</a>
-        <a href="/projects">Projects</a>
-      </nav>
-    </header>
+      <header class="header-container">
+        <div class="logo-container">
+          <img class="logo" src="/images/logo-circle-white.svg" alt="Logo" />
+          <h1 class="site-title">TEGUH ANGGAR</h1>
+          <div class="theme-toggle">
+            <img src="/images/light-mode.svg" alt="Toggle Theme" />
+          </div>
+        </div>
+  
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+          </ul>
+        </nav>
+  
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+  
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="/" target="_blank">Home</a></li>
+            <li><a href="/about" target="_blank">About</a></li>
+            <li><a href="/contact" target="_blank">Contact</a></li>
+            <li><a href="/blog" target="_blank">Blog</a></li>
+            <li><a href="/project" target="_blank">Project</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Overlay for sidebar -->
+      <div class="overlay"></div>
 
     <main>
       <section class="page-header">
@@ -109,6 +138,7 @@
           </div>
         </div>
       </div>
+      <img class="logo-footer" src="/images/logo-circle-white.png" alt="Logo" />
       <p class="copyright">&copy; 2025 TEGUH ANGGAR All Rights Reserved.</p>
     </footer>
   </body>

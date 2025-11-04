@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Teguh Anggar</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="header-container">
       <div class="logo-container">
-        <img class="logo" src="/images/logo-circle-white.svg" alt="Logo" width="50"/>
+        <img class="logo" src="/images/logo-circle-white.svg" alt="Logo" />
         <h1 class="site-title">TEGUH ANGGAR</h1>
-        <button class="theme-toggle">
-          <img src="/images/sunny-sharp.svg" alt="Toggle Theme" width="20" />
-        </button>
+        <div class="theme-toggle">
+          <img src="/images/light-mode.svg" alt="Toggle Theme" />
+        </div>
       </div>
 
       <nav class="main-nav">
         <ul>
-          <li><a href="/">Home</a></li></li> 
-          <li><a href="/contact">Contact</a></li> 
-          <li><a href="/about">About</a></li> 
-          <li><a href="/blog">Blog</a></li> 
-          <li><a href="/projects">Projects</a></li> 
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/projects">Projects</a></li>
         </ul>
-      </nav>  
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="/" target="_blank">Home</a></li>
+          <li><a href="/about" target="_blank">About</a></li>
+          <li><a href="/contact" target="_blank">Contact</a></li>
+          <li><a href="/blog" target="_blank">Blog</a></li>
+          <li><a href="/project" target="_blank">Project</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Overlay for sidebar -->
+    <div class="overlay"></div>
 
     <main>
       <section class="contact-header">
@@ -38,42 +61,37 @@
       <section class="contact-form">
         <form>
           <div class="form-row">
-              <label for="first-name">First Name</label>
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder="John"
-              />
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder="Doe"
-              />
-          </div>
-            <label for="email">Email</label>
+            <label for="first-name">First Name</label>
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="example@mail.com"
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="John"
             />
-            <label for="phone"Phone Number></label>
-            <div class="phone-input">
-              <input type="text" class="country-code" />
-              <input
-                type="tel"
-                id=phone"
-                name=phone"
-                placeholder="812345678"
-              />
-            </div>
-            <div class="message-box">
-             <label for="message">Message</label>
-             <textarea name="message" id="message"></textarea>
-            </div>
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Doe"
+            />
+          </div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+          />
+          <label for="phone" Phone Number></label>
+          <div class="phone-input">
+            <input type="text" class="country-code" />
+            <input type="tel" id=phone" name=phone" placeholder="812345678" />
+          </div>
+          <div class="message-box">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
           <button type="submit" class="button-primary">Send Message</button>
         </form>
       </section>
@@ -103,6 +121,7 @@
           </div>
         </div>
       </div>
+      <img class="logo-footer" src="/images/logo-circle-white.png" alt="Logo" />
       <p class="copyright">&copy; 2025 TEGUH ANGGAR All Rights Reserved.</p>
     </footer>
   </body>
