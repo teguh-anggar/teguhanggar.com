@@ -617,3 +617,41 @@ footer {
 .logo-footer {
   width: 20px;
 }
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-hero {
+  width: 450px;
+  height: 250px;
+}
+
+.about-header {
+  gap: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.about-header-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-main {
+  background: #0f172a;
+  background-size: cover;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: justify;
+  margin: 0 33.5vw;
+}
