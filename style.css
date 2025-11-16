@@ -625,8 +625,8 @@ footer {
 }
 
 .about-hero {
-  width: 450px;
-  height: 250px;
+  width: 600px;
+  height: 325px;
 }
 
 .about-header {
@@ -651,7 +651,37 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
   text-align: justify;
-  margin: 0 33.5vw;
+  margin: 0 28vw;
+}
+
+.main-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: justify;
+  margin: 7rem 28vw;
+}
+
+.main-work-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 350px;
+  width: 350px;
+  margin-left: 0;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.past-work {
+  display: flex;
+  flex-direction: row;
+  margin: 7rem 28vw;
+  justify-content: space-between;
 }
