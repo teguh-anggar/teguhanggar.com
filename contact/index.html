@@ -12,7 +12,9 @@
         <img class="logo" src="/images/logo-circle-white.svg" alt="Logo" />
         <h1 class="site-title">TEGUH ANGGAR</h1>
         <div class="theme-toggle">
-          <img src="/images/light-mode.svg" alt="Toggle Theme" />
+          <a href=" "
+            ><img src="/images/light-mode.svg" alt="Toggle Theme"
+          /></a>
         </div>
       </div>
 
@@ -49,9 +51,9 @@
     <!-- Overlay for sidebar -->
     <div class="overlay"></div>
 
-    <main>
+    <main class="main-body">
       <section class="contact-header">
-        <h1>Stay Connected with <span class="highlight">Teguh</span></h1>
+        <h1>Stay Connected with <span class="highlighted-text">Teguh</span></h1>
         <p>
           Feel free to fill the contact form, so we can keep the good
           interaction
@@ -66,14 +68,16 @@
               type="text"
               id="first-name"
               name="first-name"
-              placeholder="John"
+              placeholder="Teguh"
+              required
             />
             <label for="last-name">Last Name</label>
             <input
               type="text"
               id="last-name"
               name="last-name"
-              placeholder="Doe"
+              placeholder="Anggar"
+              required
             />
           </div>
           <label for="email">Email</label>
@@ -82,11 +86,18 @@
             id="email"
             name="email"
             placeholder="example@mail.com"
+            required
           />
           <label for="phone" Phone Number></label>
           <div class="phone-input">
-            <input type="text" class="country-code" />
-            <input type="tel" id=phone" name=phone" placeholder="812345678" />
+            <input
+              class="country-code"
+              type="text"
+              placeholder="+62"
+              required
+            />
+            <input type="tel" id=phone" name=phone" placeholder="812345678"
+            required/>
           </div>
           <div class="message-box">
             <label for="message">Message</label>
