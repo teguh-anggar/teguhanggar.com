@@ -311,10 +311,9 @@ a {
 
 .work-cards-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 3rem 2rem;
-  max-width: 600px;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
