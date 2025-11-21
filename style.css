@@ -137,10 +137,6 @@ body {
   text-decoration: none;
 }
 
-.hero-section ul li a:hover {
-  color: #00bbc9;
-}
-
 .social-media {
   display: flex;
   flex-direction: row;
@@ -162,48 +158,24 @@ body {
   color: white;
 }
 
-/* X (Twitter) - Black */
-.social-media li a[href*="x.com"] {
-  background-color: #000000;
-}
-
-.social-media li a[href*="x.com"]:hover {
-  background-color: #1a1a1a;
+.social-media li a:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* LinkedIn - Official Blue */
-.social-media li a[href*="LinkedIn.com"] {
+.social-media .x-twitter {
+  background-color: #000000;
+}
+
+.social-media .linkedin {
   background-color: #0a66c2;
 }
-
-.social-media li a[href*="LinkedIn.com"]:hover {
-  background-color: #004182;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.4);
-}
-
-/* Telegram - Official Blue */
-.social-media li a[href*="t.me"] {
+.social-media .telegram {
   background-color: #0088cc;
 }
 
-.social-media li a[href*="t.me"]:hover {
-  background-color: #006ba1;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4);
-}
-
-/* GitHub - Dark Gray */
-.social-media li a[href*="github.com"] {
+.social-media .github {
   background-color: #333333;
-}
-
-.social-media li a[href*="github.com"]:hover {
-  background-color: #24292e;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(51, 51, 51, 0.4);
 }
 
 /* Mobile Menu Button */
