@@ -31,6 +31,16 @@ a {
   text-decoration: none;
 }
 
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1;
+}
+
 .header-container {
   background-color: #202022;
   display: flex;
@@ -108,7 +118,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
 }
 
 /* Blur gradient transition at bottom of hero */
