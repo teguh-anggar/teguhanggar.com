@@ -1,13 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+body {
+  background: #0f172a;
 }
 
 .header-container {
@@ -559,12 +563,13 @@ body {
   margin: 0 auto;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   background-color: #202022;
+  margin-top: 3rem;
 }
 
 .container {
@@ -619,11 +624,6 @@ footer {
   margin-top: 1rem;
   justify-content: center;
   align-items: center;
-}
-
-.main-body {
-  background: #0f172a;
-  background-size: cover;
 }
 
 .work-content {
