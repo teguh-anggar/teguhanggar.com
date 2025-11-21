@@ -276,211 +276,6 @@ a {
   padding-left: 2.5rem;
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-  body {
-    padding-top: 60px;
-  }
-
-  /* Header adjustments */
-  .header-container {
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
-  .main-nav {
-    display: none;
-  }
-
-  .logo-container {
-    gap: 0.5rem;
-  }
-
-  .logo {
-    height: 24px;
-    width: 24px;
-  }
-
-  .site-title {
-    font-size: 16px;
-    white-space: nowrap;
-  }
-
-  .theme-toggle {
-    display: flex;
-  }
-
-  /* Hero section mobile */
-  .hero-section {
-    padding: 2rem 1rem 3rem 1rem;
-    min-height: auto;
-    width: 100%;
-  }
-
-  .hero-section h1 {
-    font-size: 48px;
-    text-align: center;
-    line-height: 1.1;
-    margin: 1rem 0;
-  }
-
-  .hero-section p {
-    font-size: 1rem;
-    padding: 0 0.5rem;
-    margin: 1rem 0;
-    line-height: 1.6;
-  }
-
-  .hero-photo img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Social media buttons mobile */
-  .social-media {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1.5rem 0;
-  }
-
-  .social-media li a {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  /* Section titles mobile */
-  .career-section {
-    padding: 1rem 0;
-    width: 100%;
-  }
-
-  .section-title {
-    padding: 1rem 0.5rem;
-  }
-
-  .section-title h1 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 0 0.5rem;
-    margin: 0.5rem auto;
-  }
-
-  .section-title h3 {
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
-  }
-
-  .section-title h2 {
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 0 0.5rem;
-    margin: 0.5rem auto;
-    line-height: 1.4;
-  }
-
-  /* Work cards mobile */
-  .work-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 2rem 1rem 3rem 1rem;
-    width: 100%;
-  }
-
-  .work-card {
-    padding: 1.5rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .work-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .work-card p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-
-  /* Footer mobile */
-  footer {
-    padding: 1rem;
-    font-size: 0.9rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-/* Tablet Responsive Styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header-container {
-    padding: 0.5rem 2rem;
-  }
-
-  .hero-section h1 {
-    font-size: 72px;
-  }
-
-  .hero-section p {
-    font-size: 1.2rem;
-    padding: 0 2rem;
-  }
-
-  .section-title h1 {
-    font-size: 3rem;
-  }
-
-  .work-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding: 2.5rem 2rem;
-  }
-}
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-  body {
-    padding-top: 50px;
-  }
-
-  .hero-section h1 {
-    font-size: 36px;
-  }
-
-  .hero-section p {
-    font-size: 0.9rem;
-  }
-
-  .section-title h1 {
-    font-size: 1.75rem;
-  }
-
-  .social-media li a {
-    padding: 0.35rem 0.7rem;
-    font-size: 0.75rem;
-    gap: 0.3rem;
-  }
-  .work-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 2rem 1rem 3rem 1rem;
-    width: 100%;
-  }
-
-  .work-card {
-    padding: 1.25rem;
-  }
-}
-
 .career-section {
   background-color: #0f172a;
   width: 100%;
@@ -516,10 +311,10 @@ a {
 
 .work-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  padding: 3rem 2rem 5rem 2rem;
-  max-width: 1400px;
+  padding: 3rem 2rem;
+  max-width: 600px;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
@@ -724,4 +519,210 @@ a {
 .button-primary:hover {
   background: hsl(195, 78%, 30%);
   cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+
+  /* Header adjustments */
+  .header-container {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .logo-container {
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 24px;
+    width: 24px;
+  }
+
+  .site-title {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .theme-toggle {
+    display: flex;
+  }
+
+  /* Hero section mobile */
+  .hero-section {
+    padding: 2rem 1rem 3rem 1rem;
+    min-height: auto;
+    width: 100%;
+  }
+
+  .hero-section h1 {
+    font-size: 48px;
+    text-align: center;
+    line-height: 1.1;
+    margin: 1rem 0;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+  }
+
+  .hero-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Social media buttons mobile */
+  .social-media {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .social-media li a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* Section titles mobile */
+  .career-section {
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .section-title {
+    padding: 1rem 0.5rem;
+  }
+
+  .section-title h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 0.5rem auto;
+  }
+
+  .section-title h3 {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .section-title h2 {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 0.5rem auto;
+    line-height: 1.4;
+  }
+
+  /* Work cards mobile */
+  .work-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem 3rem 1rem;
+    width: 100%;
+  }
+
+  .work-card {
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .work-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .work-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Footer mobile */
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-container {
+    padding: 0.5rem 2rem;
+  }
+
+  .hero-section h1 {
+    font-size: 72px;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+  }
+
+  .section-title h1 {
+    font-size: 3rem;
+  }
+
+  .work-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2.5rem 2rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  body {
+    padding-top: 50px;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+
+  .section-title h1 {
+    font-size: 1.75rem;
+  }
+
+  .social-media li a {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.75rem;
+    gap: 0.3rem;
+  }
+
+  .work-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem 3rem 1rem;
+    width: 100%;
+  }
+
+  .work-card {
+    padding: 1.25rem;
+  }
 }
