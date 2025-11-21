@@ -663,6 +663,15 @@ textarea {
   background-color: #202022;
   padding: 2rem 3rem;
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
 }
 
 .contact-form input,
@@ -676,6 +685,11 @@ textarea {
 .form-item {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
+}
+
+.form-item-max {
+  flex: 1;
 }
 
 .phone-input {
