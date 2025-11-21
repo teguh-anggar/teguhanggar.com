@@ -650,18 +650,16 @@ body {
   margin-top: 5rem;
 }
 
-.contact-form {
+.container-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  margin: 10px 200px;
-  padding: 16px 16px;
+}
+
+.contact-form {
   background-color: #202022;
-  border-color: 1px solid white;
+  padding: 2rem 3rem;
   border-radius: 10px;
-  box-sizing: border-box;
-  font-size: 12px;
 }
 
 input {
