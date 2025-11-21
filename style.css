@@ -703,16 +703,17 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2px auto;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
   border: 0px;
   color: white;
   width: 150px;
   height: 35px;
-  background-image: linear-gradient(to right, #0e5a74, #01bbc9);
+  transition: background 0.5s ease;
+  background: hsl(195, 78%, 25%);
 }
 
 .button-primary:hover {
-  background-image: linear-gradient(to left, #0e5a74, #01bbc9);
+  background: hsl(195, 78%, 30%);
   cursor: pointer;
 }
