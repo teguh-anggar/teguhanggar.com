@@ -61,42 +61,53 @@
       <section class="container-center">
         <form class="contact-form">
           <div class="form-row">
-            <label for="first-name">First Name</label>
+            <div class="form-item">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Teguh"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Anggar"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="email">Email</label>
             <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              placeholder="Teguh"
-              required
-            />
-            <label for="last-name">Last Name</label>
-            <input
-              type="text"
-              id="last-name"
-              name="last-name"
-              placeholder="Anggar"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
               required
             />
           </div>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="example@mail.com"
-            required
-          />
-          <label for="phone">Phone Number</label>
-          <div class="phone-input">
-            <select id="country" name="country" placeholder="+62" required>
-              <option value="indonesia">Indonesia (+62)</option>
-              <option value="india">India (+91)</option>
-              <option value="usa">USA (+1)</option>
-            </select>
-            <input type="tel" id=phone" name=phone" placeholder="812345678"
-            required/>
+
+          <div class="form-item">
+            <label for="phone">Phone Number</label>
+            <div class="phone-input">
+              <select id="country" name="country" placeholder="+62" required>
+                <option value="indonesia">Indonesia (+62)</option>
+                <option value="india">India (+91)</option>
+                <option value="usa">USA (+1)</option>
+              </select>
+              <input type="tel" id=phone" name=phone" placeholder="812345678"
+              required/>
+            </div>
           </div>
-          <div class="message-box">
+
+          <div class="form-item">
             <label for="message">Message</label>
             <textarea
               name="message"
