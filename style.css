@@ -27,6 +27,10 @@ textarea {
   font-family: "Inter", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-container {
   background-color: #202022;
   display: flex;
@@ -57,6 +61,12 @@ textarea {
   font-size: 20px;
 }
 
+.logo-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .main-nav ul {
   display: flex;
   list-style: none;
@@ -76,6 +86,8 @@ textarea {
 }
 
 .theme-toggle {
+  background: none;
+  border: none;
   margin: 1rem;
   padding: 2 auto;
 }
@@ -591,13 +603,13 @@ textarea {
   width: 20px;
 }
 
-.about-header {
+.about-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-hero {
+.about-hero-image {
   width: 100%;
   object-fit: cover;
 }
@@ -616,12 +628,12 @@ textarea {
   text-align: justify;
 }
 
-.about-header {
+.about-hero {
   gap: 0.5rem;
   line-height: 0.5rem;
 }
 
-.about-header-title {
+.about-hero-title {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
