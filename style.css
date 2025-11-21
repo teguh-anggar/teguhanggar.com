@@ -567,6 +567,18 @@ footer {
   background-color: #202022;
 }
 
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 720px;
+  padding: 2rem 1rem;
+}
+
+.section-photo {
+  width: 300px;
+  object-fit: cover;
+}
+
 .logo-footer {
   width: 20px;
 }
@@ -578,8 +590,22 @@ footer {
 }
 
 .about-hero {
-  width: 600px;
-  height: 325px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.main-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: justify;
 }
 
 .about-header {
@@ -598,30 +624,6 @@ footer {
 .main-body {
   background: #0f172a;
   background-size: cover;
-}
-
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: justify;
-  margin: 0 28vw;
-}
-
-.main-work {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: justify;
-}
-
-.main-work-image {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 350px;
-  width: 350px;
-  margin-left: 0;
 }
 
 .work-content {
