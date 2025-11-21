@@ -2,6 +2,8 @@
 
 ![Home](images/home-page.png)
 
+Figma: <https://www.figma.com/design/QQKJrjx8J8aj6b9dqLXpEq/teguhanggar.com>
+
 ## 📔 Table of Contents
 
 - [👤 Personal Website of Teguh Anggar](#-personal-website-of-teguh-anggar)
