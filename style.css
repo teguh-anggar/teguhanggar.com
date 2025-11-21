@@ -613,7 +613,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   text-align: justify;
-  margin: 7rem 28vw;
 }
 
 .main-work-image {
@@ -635,7 +634,6 @@ footer {
 .past-work {
   display: flex;
   flex-direction: row;
-  margin: 7rem 28vw;
   justify-content: space-between;
 }
 
