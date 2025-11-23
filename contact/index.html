@@ -61,8 +61,8 @@
       </section>
 
       <section class="contact-form">
-        <form>
-          <div class="form-row">
+        <form width="50px">
+          <p>
             <label for="first-name">First Name</label>
             <input
               type="text"
@@ -71,6 +71,8 @@
               placeholder="Teguh"
               required
             />
+          </p>
+          <p>
             <label for="last-name">Last Name</label>
             <input
               type="text"
@@ -79,18 +81,22 @@
               placeholder="Anggar"
               required
             />
-          </div>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="example@mail.com"
-            required
-          />
-          <label for="phone">Phone Number</label>
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone Number</label>
+          </p>
           <div class="phone-input">
-            <select id="country" name="country" placeholder="+62" required>
+            <select id="country" name="country" required>
               <option value="indonesia">Indonesia (+62)</option>
               <option value="india">India (+91)</option>
               <option value="usa">USA (+1)</option>
@@ -99,12 +105,14 @@
             required/>
           </div>
           <div class="message-box">
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Enter Your Message Here"
-            ></textarea>
+            <p>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter Your Message Here"
+              ></textarea>
+            </p>
           </div>
           <button type="submit" class="button-primary">SEND MESSAGE</button>
         </form>
