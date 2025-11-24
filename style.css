@@ -459,7 +459,7 @@ body {
   /* Footer mobile */
   footer {
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
     box-sizing: border-box;
   }
@@ -630,10 +630,15 @@ footer {
   align-items: center;
   gap: 1rem;
   background-color: #202022;
+  font-size: 0.8rem;
 }
 
 .logo-footer {
   width: 20px;
+}
+
+.light-footer-text {
+  font-weight: 100;
 }
 
 .about-header {
