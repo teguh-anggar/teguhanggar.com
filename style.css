@@ -17,9 +17,18 @@ body {
   color: #cacaca;
   padding-top: 70px;
   overflow-x: hidden;
-  min-height: 100vh;
   background: #0f172a;
   background-size: cover;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1;
 }
 
 .header-container {
@@ -137,10 +146,6 @@ body {
 .hero-section ul li a {
   color: #cacaca;
   text-decoration: none;
-}
-
-.hero-section ul li a:hover {
-  color: #00bbc9;
 }
 
 .social-media {
