@@ -719,6 +719,7 @@ footer {
   padding: 2rem 3rem;
   margin: 2rem 20rem;
   font-size: 12px;
+  font-family: "Inter", sans-serif;
 }
 
 input {
@@ -731,6 +732,7 @@ input {
   margin: 10px 0px;
   height: 1.5rem;
   width: 100%;
+  font-family: "Inter", sans-serif;
 }
 
 .phone-input {
@@ -739,10 +741,6 @@ input {
   align-items: center;
   gap: 1rem;
   margin-top: 0px;
-}
-
-p:has(label[for="phone"]) {
-  margin-bottom: 1px;
 }
 
 select {
@@ -761,6 +759,7 @@ textarea {
   width: 100%;
   height: 100px;
   padding: 10px;
+  font-family: "Inter", sans-serif;
 }
 
 .button-primary {
